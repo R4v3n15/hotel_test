@@ -51,9 +51,9 @@
                                         <th class="col-md-1">#</th>
                                         <th class="col-md-4">{{ trans('forms.nombre') }}</th>
                                         <th class="col-md-3">{{ trans('forms.street') }}</th>
-                                        <th class="col-md-3">{{ trans('forms.phone') }}</th>
+                                        <th class="col-md-2">{{ trans('forms.phone') }}</th>
                                         <th class="col-md-1">{{ trans('forms.status') }}</th>
-                                        <th class="col-md-1">{{ trans('forms.actions') }}</th>
+                                        <th class="col-md-2">{{ trans('forms.actions') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody id="result_data">
