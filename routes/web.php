@@ -22,6 +22,21 @@ Route::group(['middleware' => 'auth'], function() {
         */
         Route::get('/',         ['as' => 'index', 'uses' => 'HomeController@index']);
         Route::get('users',     ['as' => 'users', 'uses' => 'UsersController@index']);
+
+        // Module Hotel routes
+
+        Route::get('/hotels', 'HotelController@index')->name('hotels');
+        
+        Route::get('/hotels/{id}', 'HotelController@show')
+        ->where('id', '[0-9]+')->name('hotels.show');
+        
+        Route::get('/hotels/new', 'HotelController@create')->name('hotels.create');
+
+        Route::post('/hotels/add', 'HotelController@store')->name('hotels.add');
+
+        Route::put('/hotels/{hotel}', 'HotelController@update')->name('hotels.update');
+
+        Route::delete('/hotels/{hotel}', 'HotelController@destroy')->name('hotels.delete');
     });
 });
 

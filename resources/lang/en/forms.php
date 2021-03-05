@@ -2,14 +2,24 @@
 
 return [
     'nuevousuario'          => 'New User',
+    'nuevohotel'            => 'New Hotel',
     'nombre'                => 'Name',
     'username'              => 'Username',
     'rol'                   => 'Role',
     'users'                 => 'Users',
+    'hotels'                => 'Hotels',
     'active'                => 'Active',
     'inactive'              => 'Inactive',
     'status'                => 'Status',
     'correo'                => 'Email',
+
+    'google'                => 'Google',            
+    'img'                   => 'image',        
+    'slug'                  => 'Slug',        
+    'text'                  => 'Text',        
+    'direccion'             => 'Address',            
+    'telefono'              => 'Phone',            
+    'lat'                   => 'lat',        
 
     'new_product'           => 'New Product',
     'update_product'        => 'Update Product',
